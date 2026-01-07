@@ -1,14 +1,14 @@
 # Google Search API
 
-[![Promo](https://media.brightdata.com/2025/08/SERP-API-50-off-GitHub-banner_1389_166.png)](https://brightdata.com/products/serp-api/google-search) 
+[![Promo](https://media.brightdata.com/2025/08/SERP-API-50-off-GitHub-banner_1389_166.png)](https://brightdata.co.kr/products/serp-api/google-search) 
 
-> ⚠️ As of January 2025, [Google requires JavaScript](https://techcrunch.com/2025/01/17/google-begins-requiring-javascript-for-google-search/) to render search results. This update aims to block traditional bots, scrapers, and SEO tools that rely on non-JavaScript-based methods. As a result, businesses using Google Search for market research or ranking analysis must adopt tools that support JavaScript rendering.
+> ⚠️ 2025년 1월 기준으로, [Google은 JavaScript를 요구합니다](https://techcrunch.com/2025/01/17/google-begins-requiring-javascript-for-google-search/). 이는 검색 결과를 렌더링하기 위함입니다. 이 업데이트는 비 JavaScript 기반 방식에 의존하는 기존 봇, 스クレイピング 도구, SEO 도구를 차단하는 것을 목표로 합니다. 그 결과, 시장 조사 또는 순위 분석을 위해 Google Search를 사용하는 기업은 JavaScript 렌더링을 지원하는 도구를 채택해야 합니다.
 
 
-This repository provides two approaches for collecting Google SERP data:
+이 리포지토리는 Google SERP 데이터를 수집하기 위한 두 가지 접근 방식을 제공합니다:
 
-1. A free, small-scale scraper suitable for basic data collection
-2. An enterprise-grade API solution built for high-volume and robust data needs
+1. 기본 데이터 수집에 적합한 무료 소규모 스크레이퍼
+2. 대량 처리 및 견고한 데이터 요구 사항을 위해 구축된 엔터프라이즈급 API 솔루션
 
 
 ## Table of Contents
@@ -37,17 +37,17 @@ This repository provides two approaches for collecting Google SERP data:
 
 
 ## Free Scraper
-A lightweight Google scraper for basic data collection needs.
+기본 데이터 수집 요구 사항을 위한 경량 Google 스크레이퍼입니다.
 
 <img width="700" alt="google-search-result" src="https://github.com/luminati-io/google-search-api/blob/main/images/416310595-58573147-5ac2-4cb3-bb5e-295d76f6972c.png" />
 
 ### Input Parameters
 
-- **File:** List of search terms to query in Google (required)
-- **Pages:** Number of Google pages to scrape data from
+- **File:** Google에 쿼리할 검색어 목록(필수)
+- **Pages:** 데이터를 스크레이핑할 Google 페이지 수
 
 ### Implementation
-Modify these parameters in the [Python file](https://github.com/luminati-io/Google-Search-API/blob/main/free_google_scraper/google_serp.py):
+[Python file](https://github.com/luminati-io/Google-Search-API/blob/main/free_google_scraper/google_serp.py)에서 다음 파라미터를 수정합니다:
 
 ```python
 HEADLESS = False        
@@ -61,7 +61,7 @@ SEARCH_TERMS = [
 PAGES_PER_TERM = 3      
 ```
 
-💡 **Tip:** Set `HEADLESS = False` to help avoid Google's detection mechanisms.
+💡 **Tip:** Google의 탐지 메커니즘을 피하는 데 도움이 되도록 `HEADLESS = False`로 설정합니다.
 
 ### Sample Output
 <img width="700" alt="google-serp-data" src="https://github.com/luminati-io/google-search-api/blob/main/images/416109839-c7048fc9-44c3-4553-8117-2b238d354f70.png" />
@@ -69,34 +69,34 @@ PAGES_PER_TERM = 3
 
 ### Limitations
 
-Google implements several anti-scraping measures:
+Google은 여러 앤치봇 조치를 구현합니다:
 
-1. **CAPTCHAs:** Used to differentiate between humans and bots
-2. **IP Blocks:** Temporary or permanent bans for suspicious activity
-3. **Rate Limiting:** Rapid requests may trigger blocks
-4. **Geotargeting:** Results vary by location, language, and device
-5. **Honeypot Traps:** Hidden elements to detect automated access
+1. **CAPTCHAs:** 사람과 봇을 구분하는 데 사용됩니다
+2. **IP Blocks:** 의심스러운 활동에 대해 일시적 또는 영구적 차단이 적용됩니다
+3. **Rate Limiting:** 빠른 리クエスト는 차단을 유발할 수 있습니다
+4. **Geotargeting:** 결과는 위치, 언어, 디바이스에 따라 달라집니다
+5. **Honeypot Traps:** 자동화된 접근을 감지하기 위한 숨겨진 요소입니다
 
-After multiple requests, you'll likely encounter Google's CAPTCHA challenge:
+여러 번 리クエ스트를 보내면 Google의 CAPTCHA 챌린지에 직면할 가능성이 큽니다:
 
 <img width="700" alt="google-captcha" src="https://github.com/luminati-io/google-search-api/blob/main/images/414117571-21ab3e9f-1162-4aef-9e22-fb08491dd928.png" />
 
 ## Bright Data Google Search API
-[Bright Data's Google Search API](https://brightdata.com/products/serp-api/google-search) provides real-user search results from Google using customizable search parameters. Built on the same advanced technology as the [SERP API](https://brightdata.com/products/serp-api), it delivers high success rates and robust performance for scraping publicly available data at scale.
+[Bright Data's Google Search API](https://brightdata.co.kr/products/serp-api/google-search)는 커스터마이즈 가능한 검색 파라미터를 사용하여 Google에서 실제 사용자 검색 결과를 제공합니다. 동일한 고급 기술을 기반으로 하는 [SERP API](https://brightdata.co.kr/products/serp-api)와 마찬가지로, 공개적으로 이용 가능한 데이터를 대규모로 스크레이핑할 때 높은 성공률과 견고한 성능을 제공합니다.
 
 
 ### Key Features
 
-- High Success Rates, even with large volumes
-- Pay only for successful requests
-- Fast response time - under 5 seconds
-- Geolocation targeting – Extract data from any country, city, or device
-- Output formats – Retrieve data in JSON or raw HTML
-- Multiple search types – News, images, shopping, jobs, etc
-- Asynchronous requests – Fetch results in batches
-- Built for scale – Handles high traffic and peak loads
+- 대량 처리에서도 높은 성공률
+- 성공한 리クエ스트에 대해서만 과금
+- 빠른 응답 시간 - 5초 미만
+- 지오로케이션 타겟팅 – 모든 국가, 도시 또는 디바이스에서 데이터 추출
+- 출력 형식 – JSON 또는 raw HTML로 데이터 수신
+- 다양한 검색 유형 – 뉴스, 이미지, 쇼핑, 채용 등
+- 비동기 리クエ스트 – 배치로 결과 가져오기
+- 대규모 처리에 최적화 – 높은 트래픽 및 피크 로드 처리
 
-📌 Test it for free in our [SERP Playground](https://brightdata.com/products/serp-api/google-search):
+📌 [SERP Playground](https://brightdata.co.kr/products/serp-api/google-search)에서 무료로 테스트해 보실 수 있습니다:
 
 <img width="700" alt="bright-data-serp-api-playground" src="https://github.com/luminati-io/google-search-api/blob/main/images/416966701-8d516e08-37a1-4723-bf12-9a9da6a13b1a.png" />
 
@@ -104,16 +104,16 @@ After multiple requests, you'll likely encounter Google's CAPTCHA challenge:
 ### Getting Started
 
 1. **Prerequisites:**
-    - Create a [Bright Data account](https://brightdata.com/) (new users receive a $5 credit)
-    - Obtain your [API key](https://docs.brightdata.com/general/account/api-token)
-2. **Setup:** Follow the [step-by-step guide](https://github.com/luminati-io/Google-Search-API/blob/main/setup_serp_api.md) to integrate the SERP API into your Bright Data account
+    - [Bright Data account](https://brightdata.co.kr/)를 생성합니다(신규 사용자는 $5 크레딧을 받습니다)
+    - [API key](https://docs.brightdata.com/general/account/api-token)를 발급받습니다
+2. **Setup:** [step-by-step guide](https://github.com/luminati-io/Google-Search-API/blob/main/setup_serp_api.md)를 따라 Bright Data 계정에 SERP API를 통합합니다
 3. **Implementation Methods:**
     - Direct API Access
     - Native Proxy-Based Access
 
 
 ### Direct API Access
-The simplest method is to make a direct request to the API.
+가장 간단한 방법은 API에 직접 리クエ스트를 보내는 것입니다.
 
 **cURL Example**
 ```bash
@@ -150,14 +150,14 @@ with open("serp_direct_api.json", "w") as file:
 print("Response saved to 'serp_direct_api.json'.")
 ```
 
-👉 View [full JSON output](https://github.com/luminati-io/Google-Search-API/blob/main/google_search_api_outputs/serp_direct_api.json)
+👉 [full JSON output](https://github.com/luminati-io/Google-Search-API/blob/main/google_search_api_outputs/serp_direct_api.json) 보기
 
-> **Note**: Use `brd_json=1` for parsed JSON or `brd_json=html` for parsed JSON + full nested HTML.
+> **Note**: 파싱된 JSON의 경우 `brd_json=1`을 사용하고, 파싱된 JSON + 전체 중첩 HTML의 경우 `brd_json=html`을 사용합니다.
 
-Learn more about parsing search results in our [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results).
+검색 결과 파싱에 대해 더 알아보려면 [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results)를 확인하십시오.
 
 ### Native Proxy-Based Access
-Alternatively, you can use our proxy routing method.
+대신 プロキシ 라우팅 방식을 사용할 수도 있습니다.
 
 **cURL Example**
 ```bash
@@ -192,9 +192,9 @@ with open("serp_native_proxy.html", "w", encoding="utf-8") as file:
 print("Response saved to 'serp_native_proxy.html'.")
 ```
 
-👉 View [full HTML output](https://github.com/luminati-io/Google-Search-API/blob/main/google_search_api_outputs/serp_native_proxy.html)
+👉 [full HTML output](https://github.com/luminati-io/Google-Search-API/blob/main/google_search_api_outputs/serp_native_proxy.html) 보기
 
-For production, load Bright Data’s SSL certificate (see our [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)).
+프로덕션 환경에서는 Bright Data의 SSL 인증서를 로드하십시오([SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate) 참조).
 
 ## Advanced Features
 
@@ -203,10 +203,10 @@ For production, load Bright Data’s SSL certificate (see our [SSL Certificate G
 
 
 1. `gl` (Country Code)
-    - Two-letter country code that determines the country for search results
-    - Simulates a search as if made from a specific country
+    - 검색 결과의 국가를 결정하는 두 글자 국가 코드입니다
+    - 특정 국가에서 수행된 것처럼 검색을 시뮬레이션합니다
     
-    Example: Search for restaurants in France
+    Example: 프랑스에서 레스토랑 검색
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -215,10 +215,10 @@ For production, load Bright Data’s SSL certificate (see our [SSL Certificate G
     ```
     
 2. `hl` (Language Code)
-    - Two-letter language code that sets the language of page content
-    - Affects the interface and search results language
+    - 페이지 콘텐츠의 언어를 설정하는 두 글자 언어 코드입니다
+    - 인터페이스 및 검색 결과 언어에 영향을 줍니다
     
-    Example: Search for sushi restaurants in Japan (results in Japanese)
+    Example: 일본에서 스시 레스토랑 검색(결과는 일본어)
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -226,7 +226,7 @@ For production, load Bright Data’s SSL certificate (see our [SSL Certificate G
      "https://www.google.com/search?q=best+sushi+restaurants+in+tokyo&hl=ja"
     ```
     
-    You can use both parameters together for better localization:
+    더 나은 로컬라이제이션을 위해 두 파라미터를 함께 사용할 수 있습니다:
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -238,14 +238,14 @@ For production, load Bright Data’s SSL certificate (see our [SSL Certificate G
 <img width="700" alt="bright-data-google-search-api-screenshot-search-type" src="https://github.com/luminati-io/google-search-api/blob/main/images/416280410-49853108-5e3d-4062-831b-8d55711d5f54.png" />
 
 1. `tbm` (Search Category)
-    - Specifies a particular search type (images, news, etc.)
+    - 특정 검색 유형(이미지, 뉴스 등)을 지정합니다
     - **Options**:
         - `tbm=isch` → **Images**
         - `tbm=shop` → **Shopping**
         - `tbm=nws` → **News**
         - `tbm=vid` → **Videos**
     
-    **Example** (Shopping search):
+    **Example** (Shopping 검색):
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -254,8 +254,8 @@ For production, load Bright Data’s SSL certificate (see our [SSL Certificate G
     ```
     
 2. `ibp` (Jobs Search Parameter)
-    - Use specifically for jobs-related searches
-    - Example: `ibp=htl;jobs` returns job listings
+    - 채용 관련 검색에 대해 특히 사용합니다
+    - Example: `ibp=htl;jobs`는 채용 목록을 반환합니다
     
     **Example**:
     
@@ -267,16 +267,16 @@ For production, load Bright Data’s SSL certificate (see our [SSL Certificate G
 
 ### Pagination
 
-Navigate through pages of results or adjust the number of displayed results:
+결과 페이지를 이동하거나 표시되는 결과 수를 조정합니다:
 
 1. `start`
-    - Defines the starting point for search results
+    - 검색 결과의 시작 지점을 정의합니다
     - Examples:
-        - `start=0` (default) - First page
-        - `start=10` - Second page (results 11-20)
-        - `start=20` - Third page (results 21-30)
+        - `start=0` (default) - 첫 페이지
+        - `start=10` - 두 번째 페이지(결과 11-20)
+        - `start=20` - 세 번째 페이지(결과 21-30)
     
-    **Example** (Start from the 11th result):
+    **Example** (11번째 결과부터 시작):
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -285,12 +285,12 @@ Navigate through pages of results or adjust the number of displayed results:
     ```
     
 2. `num`
-    - Defines how many results to return per page
+    - 페이지당 반환할 결과 수를 정의합니다
     - Examples:
-        - `num=10` (default) - Returns 10 results
-        - `num=50` - Returns 50 results
+        - `num=10` (default) - 10개 결과를 반환합니다
+        - `num=50` - 50개 결과를 반환합니다
     
-    **Example** (Return 40 results):
+    **Example** (40개 결과 반환):
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -302,12 +302,12 @@ Navigate through pages of results or adjust the number of displayed results:
 ### Geo-Location
 <img width="700" alt="bright-data-google-search-api-screenshot-geolocation" src="https://github.com/luminati-io/google-search-api/blob/main/images/416279186-af64c770-0c8a-4007-9415-304d2e0c0fe8.png" />
 
-The `uule` parameter customizes search results based on a specific location:
+`uule` 파라미터는 특정 위치를 기준으로 검색 결과를 커스터마이즈합니다:
 
-- It requires an encoded string, not plain text.
-- Locate the raw location string in the Canonical Name column of [Google's geotargeting CSV](https://developers.google.com/adwords/api/docs/appendix/geotargeting).
-- Convert the raw string into the encoded format using a third-party converter or a built-in library.
-- Include the encoded string in your API request as the value for `uule`.
+- 일반 텍스트가 아니라 인코딩된 문자열이 필요합니다.
+- [Google's geotargeting CSV](https://developers.google.com/adwords/api/docs/appendix/geotargeting)의 Canonical Name 열에서 원본 위치 문자열을 찾습니다.
+- 서드파티 컨버터 또는 내장 라이브러리를 사용하여 원본 문자열을 인코딩 형식으로 변환합니다.
+- API 리クエ스트에 `uule` 값으로 인코딩된 문자열을 포함합니다.
 
 ```bash
 curl --proxy brd.superproxy.io:33335 \
@@ -320,7 +320,7 @@ curl --proxy brd.superproxy.io:33335 \
 <img width="700" alt="bright-data-google-search-api-screenshot-device-type" src="https://github.com/luminati-io/google-search-api/blob/main/images/416278511-cf0f203f-5d62-4eb9-9d28-7a50d75c7a00.png" />
 
 
-Use the `brd_mobile` parameter to simulate requests from specific devices:
+`brd_mobile` 파라미터를 사용하여 특정 디바이스에서의 리クエ스트를 시뮬레이션합니다:
 
 | Value | Device | User-Agent Type |
 | --- | --- | --- |
@@ -342,13 +342,13 @@ curl --proxy brd.superproxy.io:33335 \
 ### Browser Type
 <img width="700" alt="bright-data-google-search-api-screenshot-browser-type" src="https://github.com/luminati-io/google-search-api/blob/main/images/416277969-df382cb0-0eb2-4fb1-982c-2fa3401cc83a.png" />
 
-Use the `brd_browser` parameter to simulate requests from specific browsers:
+`brd_browser` 파라미터를 사용하여 특정 브라우저에서의 리クエ스트를 시뮬레이션합니다:
 
 - `brd_browser=chrome` — Google Chrome
 - `brd_browser=safari` — Safari
-- `brd_browser=firefox` — Mozilla Firefox (not compatible with `brd_mobile=1`)
+- `brd_browser=firefox` — Mozilla Firefox (`brd_mobile=1`과 호환되지 않음)
 
-If not specified, the API uses a random browser.
+지정하지 않으면 API는 랜덤 브라우저를 사용합니다.
 
 **Example**:
 
@@ -358,7 +358,7 @@ curl --proxy brd.superproxy.io:33335 \
      "https://www.google.com/search?q=best+gaming+laptops&brd_browser=chrome"
 ```
 
-**Example** (Combining browser and device type):
+**Example** (브라우저 및 디바이스 유형 결합):
 
 ```bash
 curl --proxy brd.superproxy.io:33335 \
@@ -368,11 +368,11 @@ curl --proxy brd.superproxy.io:33335 \
 
 ### Parsing Results
 
-Receive search results in a structured format using the `brd_json` parameter:
+`brd_json` 파라미터를 사용하여 구조화된 형식으로 검색 결과를 받습니다:
 
 - **Options**:
-    - `brd_json=1` - Returns results in parsed JSON format
-    - `brd_json=html` - Returns JSON with an additional `"html"` field containing raw HTML
+    - `brd_json=1` - 파싱된 JSON 형식으로 결과를 반환합니다
+    - `brd_json=html` - raw HTML을 포함하는 추가 `"html"` 필드가 있는 JSON을 반환합니다
 
 Example (JSON output):
 
@@ -382,7 +382,7 @@ curl --proxy brd.superproxy.io:33335 \
      "https://www.google.com/search?q=best+hotels+in+new+york&brd_json=1"
 ```
 
-Example (JSON with raw HTML):
+Example (raw HTML 포함 JSON):
 
 ```bash
 curl --proxy brd.superproxy.io:33335 \
@@ -390,7 +390,7 @@ curl --proxy brd.superproxy.io:33335 \
      "https://www.google.com/search?q=top+restaurants+in+paris&brd_json=html"
 ```
 
-Learn more in our [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results).
+자세한 내용은 [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results)에서 확인하십시오.
 
 
 ### Hotel Search
@@ -398,16 +398,16 @@ Learn more in our [SERP API Parsing Guide](https://docs.brightdata.com/scraping-
 <img width="700" alt="bright-data-google-search-api-screenshot-google-hotels-search" src="https://github.com/luminati-io/google-search-api/blob/main/images/416277071-0859191a-47c0-4373-b3af-a1bc04ea54b1.png" />
 
 
-Refine hotel searches with these parameters:
+다음 파라미터로 호텔 검색을 세부 조정합니다:
 
 1. `hotel_occupancy` (Number of Guests)
-    - Sets the number of guests (up to 4)
+    - 투숙객 수를 설정합니다(최대 4명)
     - Examples:
-        - `hotel_occupancy=1` → For 1 guest
-        - `hotel_occupancy=2` → For 2 guests (default)
-        - `hotel_occupancy=4` → For 4 guests
+        - `hotel_occupancy=1` → 1명
+        - `hotel_occupancy=2` → 2명(기본값)
+        - `hotel_occupancy=4` → 4명
     
-    **Example** (Search for hotels in New York for 4 guests):
+    **Example** (뉴욕에서 4명 기준으로 호텔 검색):
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -416,10 +416,10 @@ Refine hotel searches with these parameters:
     ```
     
 2. `hotel_dates` (Check-in & Check-out Dates)
-    - Filters results for specific date ranges
+    - 특정 날짜 범위로 결과를 필터링합니다
     - Format: YYYY-MM-DD, YYYY-MM-DD
     
-    **Example** (Search for hotels in Paris from May 1 to May 3, 2025):
+    **Example** (2025년 5월 1일부터 5월 3일까지 파리 호텔 검색):
     
     ```bash
     curl --proxy brd.superproxy.io:33335 \
@@ -437,11 +437,11 @@ Refine hotel searches with these parameters:
 
 ### Parallel Searches
 
-Send multiple search requests simultaneously within the same peer and session—ideal for comparing results.
+동일한 peer 및 세ッション 내에서 여러 검색 리クエ스트를 동시에 전송할 수 있으며, 결과 비교에 이상적입니다.
 
-1. Send a POST request with a `multi` array containing search variations
-2. Get a `response_id` for later result retrieval
-3. Retrieve results using the `response_id` once processing completes
+1. 검색 변형을 포함하는 `multi` 배열로 POST 리クエ스트를 전송합니다
+2. 이후 결과 조회를 위해 `response_id`를 받습니다
+3. 처리가 완료되면 `response_id`를 사용하여 결과를 조회합니다
 
 **Step 1: Send Parallel Requests**
 
@@ -469,7 +469,7 @@ curl -v --compressed \
      -H "Authorization: Bearer API_TOKEN"
 ```
 
-You can also search for multiple keywords in one request:
+또한 하나의 리クエ스트로 여러 키워드를 검색할 수도 있습니다:
 
 ```bash
 {
@@ -480,13 +480,13 @@ You can also search for multiple keywords in one request:
 }
 ```
 
-Learn more about asynchronous requests [here](https://docs.brightdata.com/scraping-automation/serp-api/asynchronous-requests).
+비동기 리クエ스트에 대해 더 알아보려면 [here](https://docs.brightdata.com/scraping-automation/serp-api/asynchronous-requests)를 확인하십시오.
 
 ### AI Overview
 
 <img width="700" alt="bright-data-google-search-api-screenshot-google-ai-overview" src="https://github.com/luminati-io/google-search-api/blob/main/images/416276209-3c7be724-e8d9-45ed-b781-017b1cbec9d4.png" />
 
-Google sometimes includes AI-generated summaries (AI Overviews) at the top of search results. Use `brd_ai_mode=1` to increase the chances of seeing these AI-generated overviews:
+Google은 때때로 검색 결과 상단에 AI 생성 요약(AI Overviews)을 포함합니다. 이러한 AI 생성 오버뷰를 볼 가능성을 높이려면 `brd_ai_mode=1`을 사용하십시오:
 
 ```bash
 curl --proxy brd.superproxy.io:33335 \
@@ -498,14 +498,14 @@ curl --proxy brd.superproxy.io:33335 \
 ## Support & Resources
 
 - **Documentation:** [SERP API Docs](https://docs.brightdata.com/scraping-automation/serp-api/)
-- **SEO Use Cases:** [SEO Tracking and Insights](https://brightdata.com/use-cases/serp-tracking)
+- **SEO Use Cases:** [SEO Tracking and Insights](https://brightdata.co.kr/use-cases/serp-tracking)
 - **Other Guides:**
     - [SERP API](https://github.com/luminati-io/serp-api)
     - [Web Unlocker API](https://github.com/luminati-io/web-unlocker-api)
     - [Google Maps Scraper](https://github.com/luminati-io/Google-Maps-Scraper)
     - [Google News Scraper](https://github.com/luminati-io/Google-News-Scraper)
 - **Interesting Reads:**
-    - [Best SERP APIs](https://brightdata.com/blog/web-data/best-serp-apis)
-    - [Build a RAG Chatbot with SERP API](https://brightdata.com/blog/web-data/build-a-rag-chatbot)
-    - [Scrape Google Search with Python](https://brightdata.com/blog/web-data/scraping-google-with-python)
+    - [Best SERP APIs](https://brightdata.co.kr/blog/web-data/best-serp-apis)
+    - [Build a RAG Chatbot with SERP API](https://brightdata.co.kr/blog/web-data/build-a-rag-chatbot)
+    - [Scrape Google Search with Python](https://brightdata.co.kr/blog/web-data/scraping-google-with-python)
 - **Technical Support:** [Contact Us](mailto:support@brightdata.com)
