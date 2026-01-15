@@ -157,7 +157,7 @@ print("Response saved to 'serp_direct_api.json'.")
 검색 결과 파싱에 대해 더 알아보려면 [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results)를 확인하십시오.
 
 ### Native Proxy-Based Access
-대신 プロキシ 라우팅 방식을 사용할 수도 있습니다.
+대신 프록시 라우팅 방식을 사용할 수도 있습니다.
 
 **cURL Example**
 ```bash
